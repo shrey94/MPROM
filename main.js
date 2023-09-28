@@ -458,8 +458,9 @@ function ChangeQuestionColor(d){
     // console.log(answer_id);
     var fields = answer_id.split("");
     var num = (fields[0]);
-    console.log(num);
-    console.log(document.getElementsByClassName('Question_Header'+num)[0].style.backgroundColor = 'white');
+    // console.log(num);
+    //console.log(document.getElementsByClassName('Question_Header'+num)[0].style.backgroundColor = 'white');
+    console.log(document.getElementsByClassName('Question_Header'+num)[0].parentNode.parentNode.style.backgroundColor = 'white');
     // .style.backgroundColor = 'white';;
     // document.getElementById('Question'+num).children[0].style.backgroundColor = 'white';
 
