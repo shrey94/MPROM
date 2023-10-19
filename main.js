@@ -1,6 +1,8 @@
 var Answer_list = Array(7);
 var Radio_Button_list = Array(7);
 
+console.log(navigator.userAgent);
+
 // var check_for_highlight = true;
 
 var x_1 = document.getElementsByClassName("option1");
@@ -477,7 +479,7 @@ function Playaudio1(e){
     var x = document.getElementById('A1_audio_file');
     x.play();
     x.onended = function() {
-        (document.getElementById(e.id).style.backgroundColor = 'white');
+        (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
         
     };
 
@@ -497,7 +499,7 @@ function Playaudio2(e){
     x.play();
     x.onended = function() {
         // (e.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (document.getElementById(e.id).style.backgroundColor = 'white');
+        (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
  };
 
 }
@@ -512,7 +514,7 @@ function Playaudio3(e){
     x.play();
     x.onended = function() {
         // (e.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (document.getElementById(e.id).style.backgroundColor = 'white');
+        (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
  };
 
 }
@@ -527,7 +529,7 @@ function Playaudio4(e){
     x.play();
     x.onended = function() {
         // (e.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (document.getElementById(e.id).style.backgroundColor = 'white');
+        (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
  };
 
 }
@@ -543,7 +545,7 @@ function Playaudio5(e){
     x.play();
     x.onended = function() {
         // (e.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (document.getElementById(e.id).style.backgroundColor = 'white');
+        (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
  };
 
 }
@@ -559,8 +561,9 @@ function PlayQuestion1(e){
 
     var question1_audio = document.getElementById('Question1_1');
     question1_audio.play();
+    console.log(e.parentNode.querySelector('svg').style.fill = 'green');
     question1_audio.onended = function() {
-        (e.parentNode.querySelector('svg').style.backgroundColor = 'white');
+        (e.parentNode.querySelector('svg').style.backgroundColor = 'lightgrey');
     };
 
 }
@@ -571,7 +574,7 @@ function PlayQuestion2(e){
     var question2_audio = document.getElementById('Question2_1');
     question2_audio.play();
     question2_audio.onended = function() {
-        (e.parentNode.querySelector('svg').style.backgroundColor = 'white');
+        (e.parentNode.querySelector('svg').style.backgroundColor = 'lightgrey');
     };
 
 }
@@ -584,7 +587,7 @@ function PlayQuestion3(e){
     question3_audio.play();
     question3_audio.onended = function() {
         // (e.parentNode.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (e.parentNode.querySelector('svg').style.backgroundColor = 'white');
+        (e.parentNode.querySelector('svg').style.backgroundColor = 'lightgrey');
     };
 
 }
@@ -596,7 +599,7 @@ function PlayQuestion4(e){
     question4_audio.play();
     question4_audio.onended = function() {
         // (e.parentNode.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (e.parentNode.querySelector('svg').style.backgroundColor = 'white');
+        (e.parentNode.querySelector('svg').style.backgroundColor = 'lightgrey');
     };
 
 }
@@ -608,7 +611,7 @@ function PlayQuestion5(e){
     question5_audio.play();
     question5_audio.onended = function() {
         // (e.parentNode.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (e.parentNode.querySelector('svg').style.backgroundColor = 'white');
+        (e.parentNode.querySelector('svg').style.backgroundColor = 'lightgrey');
     };
 
 }
@@ -621,7 +624,7 @@ function PlayQuestion6(e){
     question6_audio.play();
     question6_audio.onended = function() {
         // (e.parentNode.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (e.parentNode.querySelector('svg').style.backgroundColor = 'white');
+        (e.parentNode.querySelector('svg').style.backgroundColor = 'lightgrey');
     };
 
 }
@@ -633,7 +636,7 @@ function PlayQuestion7(e){
     question7_audio.play();
     question7_audio.onended = function() {
         // (e.parentNode.querySelectorAll('i')[0].style.color = '#2EC4B6');
-        (e.parentNode.querySelector('svg').style.backgroundColor = 'white');
+        (e.parentNode.querySelector('svg').style.backgroundColor = 'lightgrey');
     };
 
 }
