@@ -159,8 +159,8 @@ body {
     font-size:2em; 
 /*    margin-bottom: -120px; */
 /*    margin-top: -120px;*/
-    width: 90%;
-    height:70px;
+    width: 80%;
+    height:65px;
     cursor: pointer;
     color:black;
     /*border: 1px solid red;*/
@@ -172,16 +172,16 @@ body {
 	color:black;
 }*/
 
-#q1a1t,#q1a2t,#q1a3t,#q1a4t,#q1a5t,
+/*#q1a1t,#q1a2t,#q1a3t,#q1a4t,#q1a5t,
 #q2a1t,#q2a2t,#q2a3t,#q2a4t,#q2a5t,
 #q3a1t,#q3a2t,#q3a3t,#q3a4t,#q3a5t,
 #q4a1t,#q4a2t,#q4a3t,#q4a4t,#q4a5t,
 #q5a1t,#q5a2t,#q5a3t,#q5a4t,#q5a5t,
 #q6a1t,#q6a2t,#q6a3t,#q6a4t,#q6a5t,
 #q7a1t,#q7a2t,#q7a3t,#q7a4t,#q7a5t {
-/*    color: black;*/
-/*border: 1px solid red;*/
-}
+
+border: 1px solid red;
+}*/
 
 #q1_gif,#q2_gif,#q3_gif,#q4_gif,#q5_gif,#q6_gif,#q7_gif {
 	width:180px;
