@@ -156,10 +156,10 @@ body {
     flex-direction: row;
     border: 2px solid #2EC4B6; 
     border-radius: 20px;
-    font-size:2em; 
+    font-size:1.8em; 
 /*    margin-bottom: -120px; */
 /*    margin-top: -120px;*/
-    width: 80%;
+    width: 85%;
     height:65px;
     cursor: pointer;
     color:black;
