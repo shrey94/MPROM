@@ -470,83 +470,161 @@ function ChangeQuestionColor(d){
 }
 
 function Playaudio1(e){
-    console.log(e.id);
-    // var div_details = (document.getElementsByClassName('Playbutton1'));
-    // var div_id = (div_details[0].id);
-    // console.log(div_id);
+    
+    var question_list_split = e.id.split('');
+    var question_num = (question_list_split[question_list_split.length-1]);
+    var div_details = (document.getElementsByClassName('Playbutton1'));
+
+    
     (document.getElementById(e.id).style.backgroundColor = '#F99F23');
+    
     
     var x = document.getElementById('A1_audio_file');
     x.play();
+    
+    document.getElementById('PB2q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB3q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB4q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB5q'+question_num).style.backgroundColor = 'lightgrey';
+    
+
     x.onended = function() {
+        
         (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
+        
         
     };
 
-    
-   
+    document.getElementById('A2_audio_file').load();
+    document.getElementById('A2_audio_file').currentTime = 0;
+    document.getElementById('A3_audio_file').load();
+    document.getElementById('A3_audio_file').currentTime = 0;
+    document.getElementById('A4_audio_file').load();
+    document.getElementById('A4_audio_file').currentTime = 0;
+    document.getElementById('A5_audio_file').load();
+    document.getElementById('A5_audio_file').currentTime = 0;  
 
 
 }
 
 function Playaudio2(e){
-    // (e.querySelectorAll('i')[0].style.color = '#F99F23');
-    // var div_details = (document.getElementsByClassName('Playbutton2'));
-    // var div_id = (div_details[0].id);
+    var question_list_split = e.id.split('');
+    var question_num = (question_list_split[question_list_split.length-1]);
+    var div_details = (document.getElementsByClassName('Playbutton2'));
     (document.getElementById(e.id).style.backgroundColor = '#F99F23');
+    // document.getElementById('PB1q1').style.backgroundColor = 'lightgrey'
 
     var x = document.getElementById('A2_audio_file');
     x.play();
+
+    document.getElementById('PB1q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB3q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB4q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB5q'+question_num).style.backgroundColor = 'lightgrey';
+    
     x.onended = function() {
         // (e.querySelectorAll('i')[0].style.color = '#2EC4B6');
         (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
+        
  };
+    document.getElementById('A1_audio_file').load();
+    document.getElementById('A1_audio_file').currentTime = 0;
+    document.getElementById('A3_audio_file').load();
+    document.getElementById('A3_audio_file').currentTime = 0;
+    document.getElementById('A4_audio_file').load();
+    document.getElementById('A4_audio_file').currentTime = 0;
+    document.getElementById('A5_audio_file').load();
+    document.getElementById('A5_audio_file').currentTime = 0;
 
 }
 
 function Playaudio3(e){
-    // (e.querySelectorAll('i')[0].style.color = '#F99F23');
-    // var div_details = (document.getElementsByClassName('Playbutton3'));
-    // var div_id = (div_details[0].id);
+    var question_list_split = e.id.split('');
+    var question_num = (question_list_split[question_list_split.length-1]);
+    var div_details = (document.getElementsByClassName('Playbutton3'));
+
     (document.getElementById(e.id).style.backgroundColor = '#F99F23');
 
     var x = document.getElementById('A3_audio_file');
     x.play();
+    document.getElementById('PB1q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB2q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB4q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB5q'+question_num).style.backgroundColor = 'lightgrey';
+    
     x.onended = function() {
         // (e.querySelectorAll('i')[0].style.color = '#2EC4B6');
         (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
  };
+    document.getElementById('A1_audio_file').load();
+    document.getElementById('A1_audio_file').currentTime = 0;
+    document.getElementById('A2_audio_file').load();
+    document.getElementById('A2_audio_file').currentTime = 0;
+    document.getElementById('A4_audio_file').load();
+    document.getElementById('A4_audio_file').currentTime = 0;
+    document.getElementById('A5_audio_file').load();
+    document.getElementById('A5_audio_file').currentTime = 0;
 
 }
 
 function Playaudio4(e){
-    // (e.querySelectorAll('i')[0].style.color = '#F99F23');
-    // var div_details = (document.getElementsByClassName('Playbutton4'));
-    // var div_id = (div_details[0].id);
+    var question_list_split = e.id.split('');
+    var question_num = (question_list_split[question_list_split.length-1]);
+    var div_details = (document.getElementsByClassName('Playbutton4'));
     (document.getElementById(e.id).style.backgroundColor = '#F99F23');
 
     var x = document.getElementById('A4_audio_file');
     x.play();
+    document.getElementById('PB1q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB2q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB3q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB5q'+question_num).style.backgroundColor = 'lightgrey';
+    
     x.onended = function() {
         // (e.querySelectorAll('i')[0].style.color = '#2EC4B6');
         (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
+        
  };
+    document.getElementById('A1_audio_file').load();
+    document.getElementById('A1_audio_file').currentTime = 0;
+    document.getElementById('A2_audio_file').load();
+    document.getElementById('A2_audio_file').currentTime = 0;
+    document.getElementById('A3_audio_file').load();
+    document.getElementById('A3_audio_file').currentTime = 0;
+    document.getElementById('A5_audio_file').load();
+    document.getElementById('A5_audio_file').currentTime = 0;
+
 
 }
 
 function Playaudio5(e){
-    // (e.querySelectorAll('i')[0].style.color = '#F99F23');
-    // var div_details = (document.getElementsByClassName('Playbutton5'));
-    // var div_id = (div_details[0].id);
+    var question_list_split = e.id.split('');
+    var question_num = (question_list_split[question_list_split.length-1]);
+    var div_details = (document.getElementsByClassName('Playbutton5'));
     (document.getElementById(e.id).style.backgroundColor = '#F99F23');
 
 
     var x = document.getElementById('A5_audio_file');
     x.play();
+    document.getElementById('PB1q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB2q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB3q'+question_num).style.backgroundColor = 'lightgrey';
+    document.getElementById('PB4q'+question_num).style.backgroundColor = 'lightgrey';
+    
+    
     x.onended = function() {
         // (e.querySelectorAll('i')[0].style.color = '#2EC4B6');
         (document.getElementById(e.id).style.backgroundColor = 'lightgrey');
+        
  };
+    document.getElementById('A1_audio_file').load();
+    document.getElementById('A1_audio_file').currentTime = 0;
+    document.getElementById('A2_audio_file').load();
+    document.getElementById('A2_audio_file').currentTime = 0;
+    document.getElementById('A3_audio_file').load();
+    document.getElementById('A3_audio_file').currentTime = 0;
+    document.getElementById('A4_audio_file').load();
+    document.getElementById('A4_audio_file').currentTime = 0;
 
 }
 
